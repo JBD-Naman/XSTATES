@@ -71,7 +71,7 @@ const App = () => {
   };
 
   return (
-    <div className="location-selector" style={{textAlign:"center"}}>
+    <div className="location-selector" style={{ textAlign: "center" }}>
       <h1>Select Location</h1>
       <div>
         <label></label>
@@ -83,7 +83,6 @@ const App = () => {
             </option>
           ))}
         </select>
-
         &ensp;
         <select
           value={selectedState}
@@ -97,7 +96,6 @@ const App = () => {
             </option>
           ))}
         </select>
-
         &ensp;
         <select
           value={selectedCity}
@@ -115,7 +113,15 @@ const App = () => {
 
       {selectedCity && selectedState && selectedCountry && (
         <p>
-          <b>You selected: <span style={{fontSize:20}}>{selectedCity}</span>, <span style={{color:"grey"}}>{selectedState}, {selectedCountry}</span></b>
+          <span>
+            <b>
+              You selected: <span style={{ fontSize: 20 }}>{selectedCity}</span>
+              ,{" "}
+              <span style={{ color: "grey" }}>
+                {selectedState}, {selectedCountry}
+              </span>
+            </b>
+          </span>
         </p>
       )}
     </div>
