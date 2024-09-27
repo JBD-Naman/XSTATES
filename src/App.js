@@ -113,7 +113,12 @@ const App = () => {
 
       {selectedCity ? (
         <p>
-          You selected <b>{selectedCity}</b>, {selectedState}, {selectedCountry}{" "}
+          <b>
+            You selected: <span style={{ fontSize: 20 }}>{selectedCity}</span>,{" "}
+            <span style={{ color: "grey" }}>
+              {selectedState}, {selectedCountry}
+            </span>
+          </b>
         </p>
       ) : (
         <></>
