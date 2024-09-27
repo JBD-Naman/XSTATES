@@ -112,17 +112,14 @@ const App = () => {
       </div>
 
       {selectedCity && selectedState && selectedCountry && (
-        <p>
-          <span>
-            <b>
-              You selected: <span style={{ fontSize: 20 }}>{selectedCity}</span>
-              ,{" "}
-              <span style={{ color: "grey" }}>
-                {selectedState}, {selectedCountry}
-              </span>
-            </b>
-          </span>
-        </p>
+        <span>
+          <b>
+            You selected: <span style={{ fontSize: 20 }}>{selectedCity}</span>,{" "}
+            <span style={{ color: "grey" }}>
+              {selectedState}, {selectedCountry}
+            </span>
+          </b>
+        </span>
       )}
     </div>
   );
