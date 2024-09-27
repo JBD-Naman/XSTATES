@@ -71,7 +71,7 @@ const App = () => {
   };
 
   return (
-    <div className="location-selector">
+    <div className="location-selector" style={{ textAlign: "center" }}>
       <h1>Select Location</h1>
       <div>
         <label></label>
@@ -113,7 +113,12 @@ const App = () => {
 
       {selectedCity ? (
         <p>
-          You selected <b>{selectedCity}</b>, {selectedState}, {selectedCountry}{" "}
+          <b>
+            You selected: <span style={{ fontSize: 20 }}>{selectedCity}</span>,{" "}
+            <span style={{ color: "grey" }}>
+              {selectedState}, {selectedCountry}
+            </span>
+          </b>
         </p>
       ) : (
         <></>
